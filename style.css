@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    overflow: hidden;
 }
 
 body{
@@ -21,13 +22,18 @@ body{
 }
 
 .top{
+    display: flex;
+    flex-direction: row;
     grid-column: span 32;
-    background-color: brown;
+    align-items: center;
 }
 
 .left{
     grid-row: span 21;
-    background-color: blue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
 }
 
 .left-side{
@@ -41,9 +47,113 @@ body{
 }
 
 .main-side{
-    display: flex;
     background-color: rgb(27, 26, 26);
     grid-column: span 24;
     grid-row: span 20;
     border-top: solid 2px rgb(158, 156, 153);
+}
+
+.top img{
+    width: 50px;
+    height: 50px;
+    position: relative;
+    left: 5px;
+    top: 8px;
+    cursor: default;
+}
+
+.top h1{
+    position: relative;
+    left: 15px;
+    font-family: "Ubuntu", serif;
+    font-size: medium;
+    bottom: 2px;
+    color: rgb(215, 215, 215);
+    top: 5px;
+    cursor: default;
+}
+
+.ham-div{
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    padding: 10px;
+    gap: 5px;
+    position: relative;
+    top: 5px;
+}
+
+.left svg{
+    cursor: pointer;
+}
+
+.left .img{
+    position: relative;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+}
+
+.ham-div span{
+    border: 1px solid;
+    width: 15px;
+}
+
+*{
+    color: rgb(48, 47, 46);
+}
+
+.svg:hover, .left #img:hover{
+    display: flex;
+    border: 1px solid rgb(160, 160, 160);
+    width: 35px;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(169, 169, 169);
+    border-radius: 1rem;
+}
+
+.ham-div:hover{
+    border-radius: 1rem;
+    background-color: rgb(169, 169, 169);
+    border: 1px solid;
+}
+
+.left-open{
+    width: 250px;
+    align-items: start;
+    padding-left: 14.5px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(123, 123, 123);
+    top: 40px;
+    height: 100vh;
+}
+
+.left-open .ham-div{
+    padding-left: 5px;
+}
+
+.left-open{
+    display: none;
+}
+
+.left-small{
+    display:
+}
+
+.ham-div-close{
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    padding: 10px;
+    gap: 5px;
+    position: relative;
+    top: 5px;
+}
+
+.ham-div-close span{
+    border: 1px solid;
+    width: 15px;
 }
