@@ -135,25 +135,68 @@ body{
     padding-left: 5px;
 }
 
-.left-open{
-    display: none;
-}
-
-.left-small{
-    display:
-}
 
 .ham-div-close{
     display: flex;
     flex-direction: column;
     cursor: pointer;
-    padding: 10px;
     gap: 5px;
     position: relative;
-    top: 5px;
+    top: 10px;
+    left: 3px;
+    margin-bottom: 30px;
+    margin-top: 30px;
 }
 
 .ham-div-close span{
     border: 1px solid;
     width: 15px;
+}
+
+.left .phone-pic-close img{
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+}
+
+.ham-div-close:hover{
+    border-radius: 1rem;
+    background-color: rgb(169, 169, 169);
+    border: 1px solid;
+    padding: 10px;
+}
+
+.left-open a{
+    text-decoration: none;
+}
+
+.svg-close{
+    display: flex;
+    width: 10rem;
+    height: 2rem;
+    gap: 10px;
+    align-items: center;
+}
+
+.phone-pic-close{
+    width: 10rem;
+    height: 2rem;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.left-open{
+    border-left: 1px solid rgb(160, 160, 160);
+    box-shadow: 0 5px 5px rgb(215, 215, 215);
+    border-radius: 0 1rem 0 0;
+}
+
+.svg-close a:hover, .phone-pic-close a:hover{
+    color: black;
+}
+
+
+.left-open{
+    display: none;
 }
